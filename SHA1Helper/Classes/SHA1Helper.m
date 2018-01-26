@@ -86,7 +86,7 @@
         CC_SHA1_Final(digest, &hashObject);
         
         // Compute the string result
-        char hash[2 * sizeof(digest) + 1];
+        char hash[2 * sizeof(digest)];
         for (size_t i = 0; i < sizeof(digest); ++i) {
             snprintf(hash + (2 * i), 3, "%02x", (int)(digest[i]));
         }
