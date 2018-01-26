@@ -1,0 +1,16 @@
+PODS:
+  - SHA1Helper (0.1.0)
+
+DEPENDENCIES:
+  - SHA1Helper (from `../`)
+
+EXTERNAL SOURCES:
+  SHA1Helper:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SHA1Helper: d76b13262095efcc9cd28dfeb74c2aaa62077c1b
+
+PODFILE CHECKSUM: ac59bf44b4e5c05f6edc4fd2c4941fddc46981cc
+
+COCOAPODS: 1.3.1

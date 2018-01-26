@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AB0C26A201B19F8003B3A13 /* PCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB0C269201B19F8003B3A13 /* PCViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* PCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* PCAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* PCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* PCViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -38,7 +38,10 @@
 
 /* Begin PBXFileReference section */
 		132A2DF1F4611B4DDE47F99B /* Pods-SHA1Helper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHA1Helper_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SHA1Helper_Tests/Pods-SHA1Helper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		24DDEE87308858DBD5F1DA4F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		24DDEE87308858DBD5F1DA4F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2AB0C257201B1319003B3A13 /* SHA1Helper_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SHA1Helper_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		2AB0C268201B19F8003B3A13 /* PCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCViewController.h; sourceTree = "<group>"; };
+		2AB0C269201B19F8003B3A13 /* PCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCViewController.m; sourceTree = "<group>"; };
 		376151F7930E68C7BB611754 /* Pods-SHA1Helper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHA1Helper_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SHA1Helper_Example/Pods-SHA1Helper_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		378120762E4C6FEE9AF720D4 /* Pods_SHA1Helper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHA1Helper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		496A40EDA83472D0EE60D40D /* Pods-SHA1Helper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHA1Helper_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHA1Helper_Tests/Pods-SHA1Helper_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -52,8 +55,6 @@
 		6003F59B195388D20070C39A /* SHA1Helper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SHA1Helper-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* PCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* PCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* PCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* PCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* SHA1Helper_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHA1Helper_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -63,8 +64,8 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		90C8A5397D1FA88139BC4958 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		9C231A6FBF15CBF34B5AA573 /* SHA1Helper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SHA1Helper.podspec; path = ../SHA1Helper.podspec; sourceTree = "<group>"; };
+		90C8A5397D1FA88139BC4958 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9C231A6FBF15CBF34B5AA573 /* SHA1Helper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SHA1Helper.podspec; path = ../SHA1Helper.podspec; sourceTree = "<group>"; };
 		DB8EF2165D0851B15D360D35 /* Pods-SHA1Helper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHA1Helper_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHA1Helper_Example/Pods-SHA1Helper_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EA4ADE6A102C160A671C3D51 /* Pods_SHA1Helper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHA1Helper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -132,14 +133,15 @@
 		6003F593195388D20070C39A /* Example for SHA1Helper */ = {
 			isa = PBXGroup;
 			children = (
+				2AB0C268201B19F8003B3A13 /* PCViewController.h */,
+				2AB0C269201B19F8003B3A13 /* PCViewController.m */,
 				6003F59C195388D20070C39A /* PCAppDelegate.h */,
 				6003F59D195388D20070C39A /* PCAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* PCViewController.h */,
-				6003F5A6195388D20070C39A /* PCViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				2AB0C257201B1319003B3A13 /* SHA1Helper_Example-Bridging-Header.h */,
 			);
 			name = "Example for SHA1Helper";
 			path = SHA1Helper;
@@ -250,6 +252,11 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = JJSon;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 22Y7XV72K5;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Manual;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -404,7 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* PCAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* PCViewController.m in Sources */,
+				2AB0C26A201B19F8003B3A13 /* PCViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,12 +540,22 @@
 			baseConfigurationReference = 376151F7930E68C7BB611754 /* Pods-SHA1Helper_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 22Y7XV72K5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SHA1Helper/SHA1Helper-Prefix.pch";
 				INFOPLIST_FILE = "SHA1Helper/SHA1Helper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.newcunnar.SHA1Helper-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5810d900-f1cb-4617-bd6a-5c3849fe4f1b";
+				PROVISIONING_PROFILE_SPECIFIER = test_team;
+				SWIFT_OBJC_BRIDGING_HEADER = "SHA1Helper/SHA1Helper_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -548,12 +565,20 @@
 			baseConfigurationReference = DB8EF2165D0851B15D360D35 /* Pods-SHA1Helper_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SHA1Helper/SHA1Helper-Prefix.pch";
 				INFOPLIST_FILE = "SHA1Helper/SHA1Helper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.newcunnar.SHA1Helper-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SHA1Helper/SHA1Helper_Example-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

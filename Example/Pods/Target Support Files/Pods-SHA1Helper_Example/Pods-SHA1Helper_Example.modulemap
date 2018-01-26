@@ -1,0 +1,6 @@
+framework module Pods_SHA1Helper_Example {
+  umbrella header "Pods-SHA1Helper_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

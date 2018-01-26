@@ -1,0 +1,6 @@
+framework module SHA1Helper {
+  umbrella header "SHA1Helper-umbrella.h"
+
+  export *
+  module * { export * }
+}
