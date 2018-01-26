@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SHA1Helper_Example' do
+  pod 'SHA1Helper', :path => '../'
+
+  target 'SHA1Helper_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
