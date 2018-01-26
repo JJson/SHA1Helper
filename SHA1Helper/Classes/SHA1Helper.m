@@ -38,9 +38,7 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         if (![[NSFileManager defaultManager] fileExistsAtPath:filePath isDirectory:nil]) {
             if (errorHandle) {
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    errorHandle(@"文件不存在");
-                });
+                errorHandle(@"文件不存在");
             }
             return;
         }
@@ -69,9 +67,7 @@
         while (inputStream.hasBytesAvailable) {
             if (needCancelHandle && needCancelHandle()) {
                 if (errorHandle) {
-                    dispatch_async(dispatch_get_main_queue(), ^{
-                        errorHandle(@"已取消");
-                    });
+                    errorHandle(@"已取消");
                 }
                 return;
             }
@@ -81,9 +77,7 @@
                 sizeReaded = sizeReaded + readBytesCount;
                 CC_SHA1_Update(&hashObject, (const void *)buffer, (CC_LONG)readBytesCount);
                 if (progressHandle) {
-                    dispatch_async(dispatch_get_main_queue(), ^{
-                        progressHandle(1.0 * sizeReaded / fileSize);
-                    });
+                    progressHandle(1.0 * sizeReaded / fileSize);
                 }
             }
         }
@@ -100,18 +94,13 @@
         NSString * strResult = [[NSString alloc] initWithBytes:hash length:sizeof(hash) encoding:NSUTF8StringEncoding];
         if (strResult == nil) {
             if (errorHandle) {
-                dispatch_async(dispatch_get_main_queue(), ^{
                     errorHandle(@"转换字符串失败");
-                });
-                
             }
             return;
         }
         else {
             if (calculateDoneHandle) {
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    calculateDoneHandle(strResult);
-                });
+                calculateDoneHandle(strResult);
             }
         }
     });
