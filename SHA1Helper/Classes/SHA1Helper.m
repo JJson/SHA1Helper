@@ -15,10 +15,6 @@
 #define FileHashDefaultChunkSizeForReadingData 4096
 
 @implementation SHA1Helper
--(void)aaa
-{
-    
-}
 + (NSString*) sha1:(NSString*)input
 {
     NSData *data = [input dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];

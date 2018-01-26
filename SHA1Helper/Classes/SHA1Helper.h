@@ -10,7 +10,6 @@
 #import <CoreGraphics/CoreGraphics.h>
 
 @interface SHA1Helper : NSObject
--(void)aaa;
 //计算字符串
 + (NSString*)sha1:(NSString*)input;
 //计算文件
