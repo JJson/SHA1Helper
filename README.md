@@ -17,7 +17,7 @@ SHA1Helper is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'SHA1Helper'
+pod 'SHA1Helper', :git => 'https://github.com/JJson/SHA1Helper.git'
 ```
 
 ## Author
