@@ -20,7 +20,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     NSString *filePath = [NSString stringWithFormat:@"%@/Documents/microsoft_office_2016_installer.pkg",NSHomeDirectory()];
     
-    [SHA1Helper calculateFileSHA1WithPath:filePath chunkSizeForReadingData:0 needCancelHandle:^BOOL{
+    [SHA1Helper calculateFileSHA1WithPath:filePath chunkSizeForReadingData:1024*1024 needCancelHandle:^BOOL{
         return self.needStop;
     } progressHandle:^(CGFloat progress) {
 //        NSLog(@"%f",progress);
