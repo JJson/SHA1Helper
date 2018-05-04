@@ -9,8 +9,8 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-
+## Introduction
+带进度回调的Sha1计算工具
 ## Installation
 
 SHA1Helper is available through [CocoaPods](http://cocoapods.org). To install
