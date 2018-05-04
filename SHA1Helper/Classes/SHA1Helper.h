@@ -1,8 +1,5 @@
 //
 //  SHA1Help.h
-//  prfcloud
-//
-//  Created by 张 卫平 on 12-8-29.
 //
 //
 
