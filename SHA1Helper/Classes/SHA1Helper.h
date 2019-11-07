@@ -10,6 +10,7 @@
 @interface SHA1Helper : NSObject
 //计算字符串
 + (NSString*)sha1:(NSString*)input;
++ (NSString*)sha256:(NSString*)input;
 //计算文件
 + (void) calculateFileSHA256WithPath:(NSString *) filePath
            chunkSizeForReadingData:(size_t) chunkSizeForReadingData  //循环读取的块大小，传0为默认值4096
