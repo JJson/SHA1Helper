@@ -15,17 +15,52 @@
 @implementation SHA1Helper
 + (NSString*) sha1:(NSString*)input
 {
+    return [self calculate:input type:ShaTypeSha1];
+}
+
++ (NSString*) sha256:(NSString*)input
+{
+    return [self calculate:input type:ShaTypeSha256];
+}
+
+typedef enum _shaType: NSInteger {
+    ShaTypeSha1,
+    ShaTypeSha256
+} ShaType;
+
++ (NSString *)calculate: (NSString*)input type: (ShaType)type{
     NSData *data = [input dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
-    uint8_t digest[CC_SHA1_DIGEST_LENGTH];
-    CC_SHA1(data.bytes, (CC_LONG)data.length, digest);
-    NSMutableString* output = [NSMutableString stringWithCapacity:CC_SHA1_DIGEST_LENGTH * 2];
     
-    for(int i = 0; i < CC_SHA1_DIGEST_LENGTH; i++)
+    int digestLength = 0;
+    uint8_t *digest = nil;
+    switch (type) {
+        
+        case ShaTypeSha1:
+            digestLength = CC_SHA1_DIGEST_LENGTH;
+            digest = malloc(digestLength);
+            memset(digest, 0x0, digestLength);
+            CC_SHA1(data.bytes, (CC_LONG)data.length, digest);
+            break;
+        case ShaTypeSha256:
+            digestLength = CC_SHA256_DIGEST_LENGTH;
+            digest = malloc(digestLength);
+            memset(digest, 0x0, digestLength);
+            CC_SHA256(data.bytes, (CC_LONG)data.length, digest);
+            break;
+    }
+
+    NSMutableString* output = [NSMutableString stringWithCapacity:digestLength * 2];
+    
+    for(int i = 0; i < digestLength; i++) {
         [output appendFormat:@"%02x", digest[i]];
+    }
+    if (digest != nil) {
+        free(digest);
+    }
     return output;
 }
 
-+ (void) calculateFileSHA1WithPath:(NSString *) filePath
++ (void) calculateFileSHA256WithPath:(NSString *) filePath
            chunkSizeForReadingData:(size_t) chunkSizeForReadingData
                   needCancelHandle:(BOOL(^)(void)) needCancelHandle
                     progressHandle:(void (^)(CGFloat progress)) progressHandle
@@ -57,8 +92,8 @@
         // Initialize the hash object
         NSDictionary * attr = [[NSFileManager defaultManager] attributesOfItemAtPath:filePath error:nil];
         size_t fileSize = [[attr objectForKey:NSFileSize] longLongValue];
-        CC_SHA1_CTX hashObject;
-        CC_SHA1_Init(&hashObject);
+        CC_SHA256_CTX hashObject;
+        CC_SHA256_Init(&hashObject);
         if (!chunkSize) {
             chunkSize = FileHashDefaultChunkSizeForReadingData;
         }
@@ -81,7 +116,7 @@
             NSInteger readBytesCount = [inputStream read:buffer maxLength:chunkSize];
             if (readBytesCount > 0) {
                 sizeReaded = sizeReaded + readBytesCount;
-                CC_SHA1_Update(&hashObject, (const void *)buffer, (CC_LONG)readBytesCount);
+                CC_SHA256_Update(&hashObject, (const void *)buffer, (CC_LONG)readBytesCount);
                 if (progressHandle) {
                     dispatch_async(dispatch_get_main_queue(), ^{
                         progressHandle(1.0 * sizeReaded / fileSize);
@@ -92,8 +127,8 @@
         }
         free(buffer);
         // Compute the hash digest
-        unsigned char digest[CC_SHA1_DIGEST_LENGTH];
-        CC_SHA1_Final(digest, &hashObject);
+        unsigned char digest[CC_SHA256_DIGEST_LENGTH];
+        CC_SHA256_Final(digest, &hashObject);
         
         // Compute the string result
         char hash[2 * sizeof(digest)];
