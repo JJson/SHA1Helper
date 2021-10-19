@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1A00B0720E7133296DDE7CB9D9B0D3F2 /* Pods-SHA1Helper_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CAFD705BAF8240E3B6C710FF1277229 /* Pods-SHA1Helper_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A1FAFDB271D70700095C38E /* sm3.c in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FAFD5271D70700095C38E /* sm3.c */; };
+		2A1FAFDD271D70700095C38E /* sm3.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A1FAFD7271D70700095C38E /* sm3.h */; };
 		55E5626477BBF0D566DB205CAEE8B02B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		6A884F7AB1F0833C0A8311CA03CCF9B9 /* Pods-SHA1Helper_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F8E28D5D477DF5404AB0EF3B732FD2 /* Pods-SHA1Helper_Example-dummy.m */; };
 		6D2876FCEBE922EBBFD53175A0B598B9 /* SHA1Helper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B912F559605E5065296608C1E681E6 /* SHA1Helper-dummy.m */; };
@@ -39,12 +41,14 @@
 		08881ECF296A46C96AFCDE309A369A99 /* Pods-SHA1Helper_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SHA1Helper_Tests-dummy.m"; sourceTree = "<group>"; };
 		14BD77BFDFDDABD854780091FBD8411F /* Pods-SHA1Helper_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SHA1Helper_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		24EAFD7F21FB7F702B4A568048A9ACF7 /* SHA1Helper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SHA1Helper-prefix.pch"; sourceTree = "<group>"; };
+		2A1FAFD5271D70700095C38E /* sm3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sm3.c; sourceTree = "<group>"; };
+		2A1FAFD7271D70700095C38E /* sm3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sm3.h; sourceTree = "<group>"; };
 		37611DBAB27C21E2E262E7FE42F68727 /* Pods-SHA1Helper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SHA1Helper_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4CAFD705BAF8240E3B6C710FF1277229 /* Pods-SHA1Helper_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SHA1Helper_Example-umbrella.h"; sourceTree = "<group>"; };
 		4F01018B3FDEFBD7462AEF026E23973E /* SHA1Helper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SHA1Helper.xcconfig; sourceTree = "<group>"; };
 		5B164431E8AA209927184C1122652338 /* Pods-SHA1Helper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SHA1Helper_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		61C903CB6EAB165BB637541E40F927AD /* Pods_SHA1Helper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SHA1Helper_Example.framework; path = "Pods-SHA1Helper_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6279F63856C836829DF2224ADEF46DF7 /* SHA1Helper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SHA1Helper.modulemap; sourceTree = "<group>"; };
+		61C903CB6EAB165BB637541E40F927AD /* Pods_SHA1Helper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHA1Helper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6279F63856C836829DF2224ADEF46DF7 /* SHA1Helper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SHA1Helper.modulemap; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		75FFE6A5092BB55F69359510A5832959 /* Pods-SHA1Helper_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SHA1Helper_Example-frameworks.sh"; sourceTree = "<group>"; };
 		7C1D7C5106BCF22B0874CE6E515E9901 /* Pods-SHA1Helper_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SHA1Helper_Example-resources.sh"; sourceTree = "<group>"; };
@@ -52,18 +56,18 @@
 		84069621596435D92DE73852B664EFDC /* SHA1Helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHA1Helper.h; path = SHA1Helper/Classes/SHA1Helper.h; sourceTree = "<group>"; };
 		8670704F873D56412F0AC3E46BF39734 /* Pods-SHA1Helper_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SHA1Helper_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		872899EA9168914EB121819EF2D22266 /* Pods-SHA1Helper_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SHA1Helper_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AE732646E90EE2A6D041959C7BD05489 /* Pods-SHA1Helper_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SHA1Helper_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		B151D9053B3D92AD504E5331EA5079CB /* Pods_SHA1Helper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SHA1Helper_Tests.framework; path = "Pods-SHA1Helper_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B151D9053B3D92AD504E5331EA5079CB /* Pods_SHA1Helper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHA1Helper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0654DC4C3F0D739C1F431D935543756 /* SHA1Helper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SHA1Helper-umbrella.h"; sourceTree = "<group>"; };
 		C7009D91431FA8120C9AD6A6F5DC1CAB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDBF5A579BE4CCAE0153A2F600F84F3B /* Pods-SHA1Helper_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SHA1Helper_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D64BF59833E4A845CFD7B69385A84470 /* Pods-SHA1Helper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SHA1Helper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D933457F5B86826C9FA4D8A47A157EC5 /* Pods-SHA1Helper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SHA1Helper_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E3A1A07C1270085CADC0E83C221E114E /* Pods-SHA1Helper_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SHA1Helper_Tests.modulemap"; sourceTree = "<group>"; };
-		F5ACF95DB746F65264420A1EDB97BD48 /* Pods-SHA1Helper_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SHA1Helper_Example.modulemap"; sourceTree = "<group>"; };
+		E3A1A07C1270085CADC0E83C221E114E /* Pods-SHA1Helper_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SHA1Helper_Tests.modulemap"; sourceTree = "<group>"; };
+		F5ACF95DB746F65264420A1EDB97BD48 /* Pods-SHA1Helper_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SHA1Helper_Example.modulemap"; sourceTree = "<group>"; };
 		FA7882E3D7D8358316439A5C7E86D6D5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FEDB7728730DD4DC539429FBD53F96F0 /* SHA1Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SHA1Helper.framework; path = SHA1Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEDB7728730DD4DC539429FBD53F96F0 /* SHA1Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SHA1Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A1FAFD3271D70700095C38E /* LLSM3 */ = {
+			isa = PBXGroup;
+			children = (
+				2A1FAFD5271D70700095C38E /* sm3.c */,
+				2A1FAFD7271D70700095C38E /* sm3.h */,
+			);
+			name = LLSM3;
+			path = SHA1Helper/Classes/LLSM3;
+			sourceTree = "<group>";
+		};
 		5B54E5F1B4A23D1CA65467342E3DEBB7 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +215,7 @@
 		F6EDC628C6958516B911532A0AA6473D /* SHA1Helper */ = {
 			isa = PBXGroup;
 			children = (
+				2A1FAFD3271D70700095C38E /* LLSM3 */,
 				84069621596435D92DE73852B664EFDC /* SHA1Helper.h */,
 				8048C6F1B43BF59E016EE61EF34CD820 /* SHA1Helper.m */,
 				8048F8FE3EC8C76C74EE6E7D114851BC /* Support Files */,
@@ -232,6 +247,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A1FAFDD271D70700095C38E /* sm3.h in Headers */,
 				7FBB1C1CB9779A7BBD465C6D3A63BCFB /* SHA1Helper-umbrella.h in Headers */,
 				F3608435A4ED9A6A48235FC707D96549 /* SHA1Helper.h in Headers */,
 			);
@@ -306,6 +322,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
@@ -326,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D2876FCEBE922EBBFD53175A0B598B9 /* SHA1Helper-dummy.m in Sources */,
+				2A1FAFDB271D70700095C38E /* sm3.c in Sources */,
 				BC4719A3EC5D997229F777497EF63E9B /* SHA1Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
